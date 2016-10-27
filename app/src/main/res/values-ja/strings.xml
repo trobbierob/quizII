@@ -12,4 +12,16 @@
     <string name="s_question_4">千手柱間の暗殺をくわだて</string>
     <string name="u_question_3">この人物は…と知られています</string>
     <string name="submit_button">提出</string>
+    <string name="q4_d">うちはカガミ</string>
+    <string name="q4_b">うちはフガク</string>
+    <string name="q3_d">ペイン</string>
+    <string name="q4_a">うちはサスケ</string>
+    <string name="q4_c">うちはシスイ</string>
+    <string name="q3_c">うちはオビト</string>
+    <string name="q3_b">うちはマダラ</string>
+    <string name="q3_a">トビ</string>
+    <string name="q2_b">うちはマダラ</string>
+    <string name="q2_a">うちはイタチ</string>
+    <string name="q1_a">真</string>
+    <string name="q1_b">偽</string>
 </resources>
