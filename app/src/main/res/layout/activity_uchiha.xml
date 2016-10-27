@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_uchiha"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizii.UchihaActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/q1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:id="@+id/image1"
+                android:src="@drawable/test"/>
+
+            <TextView
+                android:id="@+id/u_question_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/image1"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/text_margin"
+                android:textSize="20sp"
+                android:text="@string/u_question_1"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/button"
+                android:layout_below="@id/u_question_1"
+                android:layout_toRightOf="@id/image1">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False"/>
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/q2"
+        android:layout_below="@+id/q1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:id="@+id/image2"
+                android:src="@drawable/test"/>
+
+            <TextView
+                android:id="@+id/u_question_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/image2"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/text_margin"
+                android:textSize="20dp"
+                android:text="@string/u_question_2"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/button"
+                android:layout_below="@id/u_question_2"
+                android:layout_toRightOf="@id/image2">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False"/>
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/q3"
+        android:layout_below="@id/q2">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:id="@+id/image3"
+                android:src="@drawable/test"/>
+
+            <TextView
+                android:id="@+id/u_question_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/image3"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/text_margin"
+                android:textSize="20dp"
+                android:text="@string/u_question_3"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:id="@+id/image3"
+                    android:src="@drawable/test"/>
+
+                <TextView
+                    android:id="@+id/u_question_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image3"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:paddingLeft="@dimen/text_margin"
+                    android:textSize="20dp"
+                    android:text="@string/u_question_3"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/button"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/u_question_3"
+                    android:layout_toRightOf="@id/image3"
+                    android:id="@+id/checkbox3_top">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/button"
+                        android:layout_below="@id/u_question_3"
+                        android:layout_toRightOf="@id/image3"
+                        android:text="the juice"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/button"
+                        android:layout_below="@id/u_question_3"
+                        android:layout_toRightOf="@id/image3"
+                        android:text="the juice"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/button"
+                    android:layout_below="@+id/checkbox3_top"
+                    android:layout_toRightOf="@id/image3">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/button"
+                        android:layout_below="@id/u_question_3"
+                        android:layout_toRightOf="@id/image3"
+                        android:text="the juice"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/button"
+                        android:layout_below="@id/u_question_3"
+                        android:layout_toRightOf="@id/image3"
+                        android:text="the juice"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q3">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:id="@+id/image4"
+                android:src="@drawable/test"/>
+
+            <TextView
+                android:id="@+id/u_question_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/image4"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/text_margin"
+                android:textSize="20dp"
+                android:text="@string/u_question_4"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/button"
+                android:orientation="horizontal"
+                android:layout_below="@id/u_question_4"
+                android:layout_toRightOf="@id/image4"
+                android:id="@+id/radio4_top">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/button"
+                    android:layout_below="@id/u_question_4"
+                    android:layout_toRightOf="@id/image4"
+                    android:text="the juice"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/button"
+                    android:layout_below="@id/u_question_4"
+                    android:layout_toRightOf="@id/image4"
+                    android:text="the juice"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/button"
+                android:layout_below="@+id/radio4_top"
+                android:layout_toRightOf="@id/image4">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/button"
+                    android:layout_below="@id/u_question_4"
+                    android:layout_toRightOf="@id/image1"
+                    android:text="the juice"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/button"
+                    android:layout_below="@id/u_question_4"
+                    android:layout_toRightOf="@id/image4"
+                    android:text="the juice"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_button"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

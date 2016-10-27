@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">アプリのクイズ</string>
+    <string name="s_question_2">この人はだれですか</string>
+    <string name="s_question_1">千手柱間の血継限界は何ですか</string>
+    <string name="s_app_name">千手一族</string>
+    <string name="u_app_name">うちは一族</string>
+    <string name="u_question_2">この人はだれですか</string>
+    <string name="u_question_4">だれの写輪眼ですか</string>
+    <string name="s_question_3">影分身の術の発明家はだれですか</string>
+    <string name="u_question_1">はたけカカシはうちは一族の会員ですか</string>
+    <string name="s_question_4">千手柱間の暗殺をくわだて</string>
+    <string name="u_question_3">この人物は…と知られています</string>
+    <string name="submit_button">提出</string>
+</resources>
