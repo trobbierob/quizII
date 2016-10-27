@@ -21,7 +21,7 @@
                 android:paddingLeft="@dimen/activity_vertical_margin"
                 android:paddingTop="@dimen/activity_horizontal_margin"
                 android:id="@+id/image1"
-                android:src="@drawable/test"/>
+                android:src="@drawable/kakashi"/>
 
             <TextView
                 android:id="@+id/u_question_1"
@@ -44,12 +44,14 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="True"/>
+                    android:id="@+id/q1_true"
+                    android:text="@string/q1_a"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="False"/>
+                    android:id="@+id/q1_false"
+                    android:text="@string/q1_b"/>
 
             </RadioGroup>
 
@@ -73,7 +75,7 @@
                 android:paddingLeft="@dimen/activity_vertical_margin"
                 android:paddingTop="@dimen/activity_horizontal_margin"
                 android:id="@+id/image2"
-                android:src="@drawable/test"/>
+                android:src="@drawable/itachi_large"/>
 
             <TextView
                 android:id="@+id/u_question_2"
@@ -96,12 +98,12 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="True"/>
+                    android:text="@string/q2_a"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="False"/>
+                    android:text="@string/q2_b"/>
 
             </RadioGroup>
 
@@ -109,34 +111,11 @@
 
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/q3"
         android:layout_below="@id/q2">
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/activity_vertical_margin"
-                android:paddingTop="@dimen/activity_horizontal_margin"
-                android:id="@+id/image3"
-                android:src="@drawable/test"/>
-
-            <TextView
-                android:id="@+id/u_question_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/image3"
-                android:paddingTop="@dimen/activity_horizontal_margin"
-                android:paddingLeft="@dimen/text_margin"
-                android:textSize="20dp"
-                android:text="@string/u_question_3"/>
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -148,7 +127,7 @@
                     android:paddingLeft="@dimen/activity_vertical_margin"
                     android:paddingTop="@dimen/activity_horizontal_margin"
                     android:id="@+id/image3"
-                    android:src="@drawable/test"/>
+                    android:src="@drawable/tobi"/>
 
                 <TextView
                     android:id="@+id/u_question_3"
@@ -159,7 +138,6 @@
                     android:paddingLeft="@dimen/text_margin"
                     android:textSize="20dp"
                     android:text="@string/u_question_3"/>
-
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -176,7 +154,7 @@
                         android:paddingLeft="@dimen/button"
                         android:layout_below="@id/u_question_3"
                         android:layout_toRightOf="@id/image3"
-                        android:text="the juice"/>
+                        android:text="@string/q3_a"/>
 
                     <CheckBox
                         android:layout_width="wrap_content"
@@ -184,7 +162,7 @@
                         android:paddingLeft="@dimen/button"
                         android:layout_below="@id/u_question_3"
                         android:layout_toRightOf="@id/image3"
-                        android:text="the juice"/>
+                        android:text="@string/q3_b"/>
 
                 </LinearLayout>
 
@@ -202,7 +180,7 @@
                         android:paddingLeft="@dimen/button"
                         android:layout_below="@id/u_question_3"
                         android:layout_toRightOf="@id/image3"
-                        android:text="the juice"/>
+                        android:text="@string/q3_c"/>
 
                     <CheckBox
                         android:layout_width="wrap_content"
@@ -210,14 +188,11 @@
                         android:paddingLeft="@dimen/button"
                         android:layout_below="@id/u_question_3"
                         android:layout_toRightOf="@id/image3"
-                        android:text="the juice"/>
+                        android:text="@string/q3_d"/>
 
                 </LinearLayout>
 
             </RelativeLayout>
-
-
-        </RelativeLayout>
 
     </LinearLayout>
 
@@ -236,7 +211,7 @@
                 android:paddingLeft="@dimen/activity_vertical_margin"
                 android:paddingTop="@dimen/activity_horizontal_margin"
                 android:id="@+id/image4"
-                android:src="@drawable/test"/>
+                android:src="@drawable/shisui"/>
 
             <TextView
                 android:id="@+id/u_question_4"
@@ -264,7 +239,7 @@
                     android:paddingLeft="@dimen/button"
                     android:layout_below="@id/u_question_4"
                     android:layout_toRightOf="@id/image4"
-                    android:text="the juice"/>
+                    android:text="@string/q4_a"/>
 
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -272,7 +247,7 @@
                     android:paddingLeft="@dimen/button"
                     android:layout_below="@id/u_question_4"
                     android:layout_toRightOf="@id/image4"
-                    android:text="the juice"/>
+                    android:text="@string/q4_b"/>
 
             </LinearLayout>
 
@@ -290,7 +265,7 @@
                     android:paddingLeft="@dimen/button"
                     android:layout_below="@id/u_question_4"
                     android:layout_toRightOf="@id/image1"
-                    android:text="the juice"/>
+                    android:text="@string/q4_c"/>
 
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -298,7 +273,7 @@
                     android:paddingLeft="@dimen/button"
                     android:layout_below="@id/u_question_4"
                     android:layout_toRightOf="@id/image4"
-                    android:text="the juice"/>
+                    android:text="@string/q4_d"/>
 
             </LinearLayout>
 
