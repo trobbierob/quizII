@@ -20,14 +20,14 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="@dimen/activity_vertical_margin"
                 android:paddingTop="@dimen/activity_horizontal_margin"
-                android:id="@+id/image1"
+                android:id="@+id/kakashi"
                 android:src="@drawable/kakashi"/>
 
             <TextView
                 android:id="@+id/u_question_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/image1"
+                android:layout_toRightOf="@id/kakashi"
                 android:paddingTop="@dimen/activity_horizontal_margin"
                 android:paddingLeft="@dimen/text_margin"
                 android:textSize="20sp"
@@ -38,8 +38,9 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingLeft="@dimen/button"
+                android:id="@+id/q1_radioGroup"
                 android:layout_below="@id/u_question_1"
-                android:layout_toRightOf="@id/image1">
+                android:layout_toRightOf="@id/kakashi">
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -93,16 +94,20 @@
                 android:orientation="horizontal"
                 android:paddingLeft="@dimen/button"
                 android:layout_below="@id/u_question_2"
+                android:onClick="Question1"
+                android:id="@+id/q2_radioGroup"
                 android:layout_toRightOf="@id/image2">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="Question1"
                     android:text="@string/q2_a"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="Question1"
                     android:text="@string/q2_b"/>
 
             </RadioGroup>
@@ -154,6 +159,8 @@
                         android:paddingLeft="@dimen/button"
                         android:layout_below="@id/u_question_3"
                         android:layout_toRightOf="@id/image3"
+                        android:onClick="Question3"
+                        android:id="@+id/q3_a"
                         android:text="@string/q3_a"/>
 
                     <CheckBox
@@ -162,6 +169,8 @@
                         android:paddingLeft="@dimen/button"
                         android:layout_below="@id/u_question_3"
                         android:layout_toRightOf="@id/image3"
+                        android:onClick="Question3"
+                        android:id="@+id/q3_b"
                         android:text="@string/q3_b"/>
 
                 </LinearLayout>
@@ -180,6 +189,8 @@
                         android:paddingLeft="@dimen/button"
                         android:layout_below="@id/u_question_3"
                         android:layout_toRightOf="@id/image3"
+                        android:id="@+id/q3_c"
+                        android:onClick="Question3"
                         android:text="@string/q3_c"/>
 
                     <CheckBox
@@ -188,6 +199,8 @@
                         android:paddingLeft="@dimen/button"
                         android:layout_below="@id/u_question_3"
                         android:layout_toRightOf="@id/image3"
+                        android:onClick="Question3"
+                        android:id="@+id/q3_d"
                         android:text="@string/q3_d"/>
 
                 </LinearLayout>
@@ -264,7 +277,7 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/button"
                     android:layout_below="@id/u_question_4"
-                    android:layout_toRightOf="@id/image1"
+                    android:layout_toRightOf="@id/image4"
                     android:text="@string/q4_c"/>
 
                 <CheckBox
@@ -287,6 +300,7 @@
         android:text="@string/submit_button"
         android:layout_marginBottom="8dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:onClick="Submit"/>
 
 </RelativeLayout>
