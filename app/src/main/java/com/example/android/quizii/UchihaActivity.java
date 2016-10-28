@@ -3,7 +3,6 @@ package com.example.android.quizii;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
@@ -15,16 +14,25 @@ import static com.example.android.quizii.R.id.q1_radioGroup;
 public class UchihaActivity extends AppCompatActivity {
 
     int score = 0;
+    int q1 = 0;
+    int q2 = 0;
+    int q3 = 0;
+    int q4 = 0;
 
     boolean q3_a = false;
     boolean q3_b = false;
     boolean q3_c = false;
     boolean q3_d = false;
 
+    boolean q4_a = false;
+    boolean q4_b = false;
+    boolean q4_c = false;
+    boolean q4_d = false;
+
     //private RadioGroup q1_radioGroup;
     //private RadioGroup q2_radioGroup;
-    private RadioGroup q1radioGroup;
-    private RadioGroup q2radioGroup;
+    RadioGroup q1radioGroup;
+    RadioGroup q2radioGroup;
 
     private static final String TAG = "Tag";
 
@@ -43,14 +51,10 @@ public class UchihaActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton rb = (RadioButton) group.findViewById(checkedId);
-                if(checkedId == 2131427424){
-                    Log.v(TAG, "checkedID is true" + checkedId);
-                    Toast.makeText(UchihaActivity.this, rb.getText(), Toast.LENGTH_SHORT).show();
-                    score++;
+                if(checkedId == R.id.q1_true){
+                    q1 = 0;
                 } else {
-
-                    Toast.makeText(UchihaActivity.this, "salad", Toast.LENGTH_SHORT).show();
-
+                    q1++;
                 }
 
             }
@@ -66,8 +70,13 @@ public class UchihaActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton rb = (RadioButton) group.findViewById(checkedId);
-                if(null!=rb && checkedId > -1){
-                    Toast.makeText(UchihaActivity.this, rb.getText(), Toast.LENGTH_SHORT).show();
+                if(checkedId == R.id.q2_itachi){
+                    //Log.v(TAG, "checkedID is false " + checkedId);
+                    //Toast.makeText(UchihaActivity.this, rb.getText(), Toast.LENGTH_SHORT).show();
+                    q2++;
+                } else {
+                    //Toast.makeText(UchihaActivity.this, rb.getText(), Toast.LENGTH_SHORT).show();
+                    q2 = 0;
                 }
 
             }
@@ -97,12 +106,6 @@ public class UchihaActivity extends AppCompatActivity {
                 break;
 
         }
-
-    }
-
-    public void Question2() {
-
-
 
     }
 
@@ -152,21 +155,70 @@ public class UchihaActivity extends AppCompatActivity {
 
         // If a, b, and c
         if (q3_a == true && q3_b == true && q3_c == true) {
-            score++;
+            q3++;
         } else {
-            return;
+            q3 = 0;
         }
 
     }
 
-    public void Question4() {
+    public void Question4(View view) {
 
+        boolean checked = ((CheckBox) view).isChecked();
 
+        // Check which checkbox was clicked
+        switch(view.getId()) {
+            case R.id.q4_a:
+                if (checked) {
+                    q4_a = true;
+                } else {
+                    q4_a = false;
+                } break;
+        }
+
+        // Check which checkbox was clicked
+        switch(view.getId()) {
+            case R.id.q4_b:
+                if (checked) {
+                    q4_b = true;
+                } else {
+                    q4_b = false;
+                } break;
+        }
+
+        // Check which checkbox was clicked
+        switch(view.getId()) {
+            case R.id.q4_c:
+                if (checked) {
+                    q4_c = true;
+                } else {
+                    q4_c = false;
+                } break;
+        }
+
+        // Check which checkbox was clicked
+        switch(view.getId()) {
+            case R.id.q4_d:
+                if (checked) {
+                    q4_d = true;
+                } else {
+                    q4_d = false;
+                } break;
+        }
+
+        // If a, b, and c
+        if (q4_c == true && !q4_a && !q4_b && !q4_d) {
+            q4++;
+        } else {
+            q4 = 0;
+        }
 
     }
 
     public void Submit(View view) {
         Context context = getApplicationContext();
+
+        score = q1 + q2 + q3 + q4;
 
         if (score == 4) {
 

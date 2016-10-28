@@ -102,12 +102,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="Question1"
+                    android:id="@+id/q2_itachi"
                     android:text="@string/q2_a"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="Question1"
+                    android:id="@+id/q2_madara"
                     android:text="@string/q2_b"/>
 
             </RadioGroup>
@@ -252,6 +254,8 @@
                     android:paddingLeft="@dimen/button"
                     android:layout_below="@id/u_question_4"
                     android:layout_toRightOf="@id/image4"
+                    android:onClick="Question4"
+                    android:id="@+id/q4_a"
                     android:text="@string/q4_a"/>
 
                 <CheckBox
@@ -260,6 +264,8 @@
                     android:paddingLeft="@dimen/button"
                     android:layout_below="@id/u_question_4"
                     android:layout_toRightOf="@id/image4"
+                    android:onClick="Question4"
+                    android:id="@+id/q4_b"
                     android:text="@string/q4_b"/>
 
             </LinearLayout>
@@ -278,6 +284,8 @@
                     android:paddingLeft="@dimen/button"
                     android:layout_below="@id/u_question_4"
                     android:layout_toRightOf="@id/image4"
+                    android:id="@+id/q4_c"
+                    android:onClick="Question4"
                     android:text="@string/q4_c"/>
 
                 <CheckBox
@@ -286,6 +294,8 @@
                     android:paddingLeft="@dimen/button"
                     android:layout_below="@id/u_question_4"
                     android:layout_toRightOf="@id/image4"
+                    android:onClick="Question4"
+                    android:id="@+id/q4_d"
                     android:text="@string/q4_d"/>
 
             </LinearLayout>
