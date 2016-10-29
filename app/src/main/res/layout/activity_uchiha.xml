@@ -31,7 +31,7 @@
                 android:paddingTop="@dimen/activity_horizontal_margin"
                 android:paddingLeft="@dimen/text_margin"
                 android:textSize="20sp"
-                android:text="@string/u_question_1"/>
+                android:text="@string/uchiha_q_1"/>
 
             <RadioGroup
                 android:layout_width="wrap_content"
@@ -46,13 +46,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/q1_true"
-                    android:text="@string/q1_a"/>
+                    android:text="@string/uchiha_q1_a"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/q1_false"
-                    android:text="@string/q1_b"/>
+                    android:text="@string/uchiha_q1_b"/>
 
             </RadioGroup>
 
@@ -76,7 +76,7 @@
                 android:paddingLeft="@dimen/activity_vertical_margin"
                 android:paddingTop="@dimen/activity_horizontal_margin"
                 android:id="@+id/image2"
-                android:src="@drawable/itachi_large"/>
+                android:src="@drawable/itachi"/>
 
             <TextView
                 android:id="@+id/u_question_2"
@@ -86,7 +86,7 @@
                 android:paddingTop="@dimen/activity_horizontal_margin"
                 android:paddingLeft="@dimen/text_margin"
                 android:textSize="20dp"
-                android:text="@string/u_question_2"/>
+                android:text="@string/uchiha_q_2"/>
 
             <RadioGroup
                 android:layout_width="wrap_content"
@@ -94,23 +94,20 @@
                 android:orientation="horizontal"
                 android:paddingLeft="@dimen/button"
                 android:layout_below="@id/u_question_2"
-                android:onClick="Question1"
                 android:id="@+id/q2_radioGroup"
                 android:layout_toRightOf="@id/image2">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="Question1"
                     android:id="@+id/q2_itachi"
-                    android:text="@string/q2_a"/>
+                    android:text="@string/uchiha_q2_a"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="Question1"
                     android:id="@+id/q2_madara"
-                    android:text="@string/q2_b"/>
+                    android:text="@string/uchiha_q2_b"/>
 
             </RadioGroup>
 
@@ -144,7 +141,7 @@
                     android:paddingTop="@dimen/activity_horizontal_margin"
                     android:paddingLeft="@dimen/text_margin"
                     android:textSize="20dp"
-                    android:text="@string/u_question_3"/>
+                    android:text="@string/uchiha_q_3"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -163,7 +160,7 @@
                         android:layout_toRightOf="@id/image3"
                         android:onClick="Question3"
                         android:id="@+id/q3_a"
-                        android:text="@string/q3_a"/>
+                        android:text="@string/uchiha_q3_a"/>
 
                     <CheckBox
                         android:layout_width="wrap_content"
@@ -173,7 +170,7 @@
                         android:layout_toRightOf="@id/image3"
                         android:onClick="Question3"
                         android:id="@+id/q3_b"
-                        android:text="@string/q3_b"/>
+                        android:text="@string/uchiha_q3_b"/>
 
                 </LinearLayout>
 
@@ -193,7 +190,7 @@
                         android:layout_toRightOf="@id/image3"
                         android:id="@+id/q3_c"
                         android:onClick="Question3"
-                        android:text="@string/q3_c"/>
+                        android:text="@string/uchiha_q3_c"/>
 
                     <CheckBox
                         android:layout_width="wrap_content"
@@ -203,7 +200,7 @@
                         android:layout_toRightOf="@id/image3"
                         android:onClick="Question3"
                         android:id="@+id/q3_d"
-                        android:text="@string/q3_d"/>
+                        android:text="@string/uchiha_q3_d"/>
 
                 </LinearLayout>
 
@@ -226,7 +223,7 @@
                 android:paddingLeft="@dimen/activity_vertical_margin"
                 android:paddingTop="@dimen/activity_horizontal_margin"
                 android:id="@+id/image4"
-                android:src="@drawable/shisui"/>
+                android:src="@drawable/sasukeindra"/>
 
             <TextView
                 android:id="@+id/u_question_4"
@@ -236,7 +233,7 @@
                 android:paddingTop="@dimen/activity_horizontal_margin"
                 android:paddingLeft="@dimen/text_margin"
                 android:textSize="20dp"
-                android:text="@string/u_question_4"/>
+                android:text="@string/uchiha_q_4"/>
 
 
             <LinearLayout
@@ -256,7 +253,7 @@
                     android:layout_toRightOf="@id/image4"
                     android:onClick="Question4"
                     android:id="@+id/q4_a"
-                    android:text="@string/q4_a"/>
+                    android:text="@string/uchiha_q4_a"/>
 
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -266,7 +263,7 @@
                     android:layout_toRightOf="@id/image4"
                     android:onClick="Question4"
                     android:id="@+id/q4_b"
-                    android:text="@string/q4_b"/>
+                    android:text="@string/uchiha_q4_b"/>
 
             </LinearLayout>
 
@@ -286,7 +283,7 @@
                     android:layout_toRightOf="@id/image4"
                     android:id="@+id/q4_c"
                     android:onClick="Question4"
-                    android:text="@string/q4_c"/>
+                    android:text="@string/uchiha_q4_c"/>
 
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -296,7 +293,7 @@
                     android:layout_toRightOf="@id/image4"
                     android:onClick="Question4"
                     android:id="@+id/q4_d"
-                    android:text="@string/q4_d"/>
+                    android:text="@string/uchiha_q4_d"/>
 
             </LinearLayout>
 

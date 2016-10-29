@@ -16,7 +16,7 @@
     <string name="q4_b">うちはフガク</string>
     <string name="q3_d">ペイン</string>
     <string name="q4_a">うちはサスケ</string>
-    <string name="q4_c">うちはシスイ</string>
+    <string name="q4_c">大筒木インドラ</string>
     <string name="q3_c">うちはオビト</string>
     <string name="q3_b">うちはマダラ</string>
     <string name="q3_a">トビ</string>
@@ -24,4 +24,26 @@
     <string name="q2_a">うちはイタチ</string>
     <string name="q1_a">真</string>
     <string name="q1_b">偽</string>
+    <string name="uchiha_q1_a">真</string>
+    <string name="uchiha_q1_b">偽</string>
+    <string name="uchiha_q2_a">うちはイタチ</string>
+    <string name="uchiha_q2_b">うちはマダラ</string>
+    <string name="uchiha_q3_a">トビ</string>
+    <string name="uchiha_q3_b">うちはマダラ</string>
+    <string name="uchiha_q3_c">うちはオビト</string>
+    <string name="uchiha_q3_d">ペイン</string>
+    <string name="uchiha_q4_a">うちはサスケ</string>
+    <string name="uchiha_q4_b">うちはフガク</string>
+    <string name="uchiha_q4_c">大筒木インドラ</string>
+    <string name="uchiha_q4_d">うちはカガミ</string>
+    <string name="senju_app_name">千手一族</string>
+    <string name="senju_q_1">千手柱間の血継限界は何ですか</string>
+    <string name="senju_q_2">この人はだれですか</string>
+    <string name="senju_q_3">影分身の術の発明家はだれですか</string>
+    <string name="senju_q_4">千手柱間の暗殺をくわだて</string>
+    <string name="uchiha_app_name">うちは一族</string>
+    <string name="uchiha_q_1">はたけカカシはうちは一族の会員ですか</string>
+    <string name="uchiha_q_2">この人はだれですか</string>
+    <string name="uchiha_q_3">この人物は…と知られています</string>
+    <string name="uchiha_q_4">だれの写輪眼ですか</string>
 </resources>
