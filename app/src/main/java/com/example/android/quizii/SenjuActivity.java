@@ -157,7 +157,7 @@ public class SenjuActivity extends AppCompatActivity {
 
         if (score == 4) {
 
-            Toast.makeText(context, "100%!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "100%", Toast.LENGTH_SHORT).show();
 
         } else if (score == 3) {
 

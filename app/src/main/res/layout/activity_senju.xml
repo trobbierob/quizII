@@ -1,249 +1,255 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_senju"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.quizii.SenjuActivity">
+    android:fillViewport="true">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/q1">
+    <RelativeLayout
+        android:id="@+id/activity_senju"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <RelativeLayout
+        <LinearLayout
+            android:id="@+id/q1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <ImageView
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/activity_vertical_margin"
-                android:paddingTop="@dimen/activity_horizontal_margin"
-                android:id="@+id/kakashi"
-                android:src="@drawable/hashiramasage"/>
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/u_question_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/kakashi"
-                android:paddingTop="@dimen/activity_horizontal_margin"
-                android:paddingLeft="@dimen/text_margin"
-                android:textSize="20sp"
-                android:text="@string/senju_q_1"/>
-
-            <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/button"
-                android:id="@+id/senju_spinner"
-                android:layout_below="@id/u_question_1"
-                android:layout_toRightOf="@id/kakashi">
-
-
-            </Spinner>
-
-        </RelativeLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/q2"
-        android:layout_below="@+id/q1">
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/activity_vertical_margin"
-                android:paddingTop="@dimen/activity_horizontal_margin"
-                android:id="@+id/image2"
-                android:src="@drawable/itama"/>
-
-            <TextView
-                android:id="@+id/u_question_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/image2"
-                android:paddingTop="@dimen/activity_horizontal_margin"
-                android:paddingLeft="@dimen/text_margin"
-                android:textSize="20dp"
-                android:text="@string/senju_q_2"/>
-
-            <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/button"
-                android:layout_below="@id/u_question_2"
-                android:id="@+id/q2_radioGroup"
-                android:layout_toRightOf="@id/image2">
-
-                <RadioButton
+                <ImageView
+                    android:id="@+id/kakashi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/q2_butsuma"
-                    android:text="@string/butsuma" />
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/hashiramasage" />
 
-                <RadioButton
+                <TextView
+                    android:id="@+id/u_question_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/q2_itama"
-                    android:text="@string/itama" />
+                    android:layout_toRightOf="@id/kakashi"
+                    android:paddingLeft="@dimen/text_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:text="@string/senju_q_1"
+                    android:textSize="20sp" />
 
-            </RadioGroup>
+                <Spinner
+                    android:id="@+id/senju_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/u_question_1"
+                    android:layout_toRightOf="@id/kakashi"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/button">
 
-        </RelativeLayout>
 
-    </LinearLayout>
+                </Spinner>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/q3"
-        android:layout_below="@id/q2">
+            </RelativeLayout>
 
-        <RelativeLayout
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/q1">
 
-            <ImageView
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/activity_vertical_margin"
-                android:paddingTop="@dimen/activity_horizontal_margin"
-                android:id="@+id/image3"
-                android:src="@drawable/shadowclone"/>
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/u_question_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/image3"
-                android:paddingTop="@dimen/activity_horizontal_margin"
-                android:paddingLeft="@dimen/text_margin"
-                android:textSize="20dp"
-                android:text="@string/senju_q_3"/>
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/itama" />
 
-            <LinearLayout
+                <TextView
+                    android:id="@+id/u_question_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image2"
+                    android:paddingLeft="@dimen/text_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:text="@string/senju_q_2"
+                    android:textSize="20dp" />
+
+                <RadioGroup
+                    android:id="@+id/q2_radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/u_question_2"
+                    android:layout_toRightOf="@id/image2"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/button">
+
+                    <RadioButton
+                        android:id="@+id/q2_butsuma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/butsuma" />
+
+                    <RadioButton
+                        android:id="@+id/q2_itama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/itama" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q2">
+
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/button"
-                android:orientation="horizontal"
-                android:layout_below="@id/u_question_3"
-                android:layout_toRightOf="@id/image3"
-                android:id="@+id/radiogroup3a">
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/shadowclone" />
+
+                <TextView
+                    android:id="@+id/u_question_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image3"
+                    android:paddingLeft="@dimen/text_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:text="@string/senju_q_3"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/radiogroup3a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/u_question_3"
+                    android:layout_toRightOf="@id/image3"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/button">
 
 
                     <RadioButton
+                        android:id="@+id/q3_tobirama"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/u_question_2"
-                        android:id="@+id/q3_tobirama"
-                        android:text="@string/tobirama"/>
+                        android:text="@string/tobirama" />
 
                     <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:id="@+id/q3_hiruzen"
-                        android:text="@string/hiruzen"/>
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/button"
-                android:orientation="horizontal"
-                android:layout_below="@id/radiogroup3a"
-                android:layout_toRightOf="@id/image3"
-                android:id="@+id/checkbox3_top">
-
-                    <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="@string/hiruzen" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/checkbox3_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radiogroup3a"
+                    android:layout_toRightOf="@id/image3"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/button">
+
+                    <RadioButton
                         android:id="@+id/q3_jiraiya"
-                        android:text="@string/jiraiya"/>
-
-                    <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="@string/jiraiya" />
+
+                    <RadioButton
                         android:id="@+id/q3_nagato"
-                        android:text="@string/nagato"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nagato" />
 
-            </LinearLayout>
+                </LinearLayout>
 
-        </RelativeLayout>
+            </RelativeLayout>
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/q3">
-
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q3">
 
-            <ImageView
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/activity_vertical_margin"
-                android:paddingTop="@dimen/activity_horizontal_margin"
-                android:id="@+id/image4"
-                android:src="@drawable/hashiramaplain"/>
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/u_question_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/image4"
-                android:paddingTop="@dimen/activity_horizontal_margin"
-                android:paddingLeft="@dimen/text_margin"
-                android:textSize="20dp"
-                android:text="@string/senju_q_4"/>
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/hashiramaplain" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/button"
-                android:orientation="horizontal"
-                android:layout_below="@id/u_question_4"
-                android:layout_toRightOf="@id/image4"
-                android:id="@+id/radio4_top">
+                <TextView
+                    android:id="@+id/u_question_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image4"
+                    android:paddingLeft="@dimen/text_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:text="@string/senju_q_4"
+                    android:textSize="20dp" />
 
-                <EditText
+                <LinearLayout
+                    android:id="@+id/radio4_top"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="8dp"
-                    android:layout_marginRight="16dp"
                     android:layout_below="@id/u_question_4"
                     android:layout_toRightOf="@id/image4"
-                    android:id="@+id/q4_input"
-                    android:hint="@string/enter_text" />
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/button">
 
-            </LinearLayout>
+                    <EditText
+                        android:id="@+id/q4_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/u_question_4"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@id/image4"
+                        android:hint="@string/enter_text"
+                        android:paddingLeft="8dp" />
 
-        </RelativeLayout>
+                </LinearLayout>
 
-    </LinearLayout>
+            </RelativeLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/submit_button"
-        android:layout_marginBottom="8dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="Submit"/>
+        </LinearLayout>
 
-</RelativeLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:onClick="Submit"
+            android:text="@string/submit_button" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,322 +1,329 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_uchiha"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.quizii.UchihaActivity">
+    android:fillViewport="true">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/q1">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_uchiha"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.quizii.UchihaActivity">
 
-        <RelativeLayout
+        <LinearLayout
+            android:id="@+id/q1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/activity_vertical_margin"
-                android:paddingTop="@dimen/activity_horizontal_margin"
-                android:id="@+id/kakashi"
-                android:src="@drawable/kakashi"/>
-
-            <TextView
-                android:id="@+id/u_question_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/kakashi"
-                android:textColor="@color/secondary_text_material_light"
-                android:paddingTop="@dimen/activity_horizontal_margin"
-                android:paddingLeft="@dimen/text_margin"
-                android:textSize="20sp"
-                android:text="@string/uchiha_q_1"/>
-
-            <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/button"
-                android:id="@+id/q1_radioGroup"
-                android:layout_below="@id/u_question_1"
-                android:layout_toRightOf="@id/kakashi">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/secondary_text_material_light"
-                    android:id="@+id/q1_true"
-                    android:text="@string/uchiha_q1_a"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/secondary_text_material_light"
-                    android:id="@+id/q1_false"
-                    android:text="@string/uchiha_q1_b"/>
-
-            </RadioGroup>
-
-        </RelativeLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/q2"
-        android:layout_below="@+id/q1">
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/activity_vertical_margin"
-                android:paddingTop="@dimen/activity_horizontal_margin"
-                android:id="@+id/image2"
-                android:src="@drawable/itachi"/>
-
-            <TextView
-                android:id="@+id/u_question_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/image2"
-                android:paddingTop="@dimen/activity_horizontal_margin"
-                android:paddingLeft="@dimen/text_margin"
-                android:textSize="20dp"
-                android:textColor="@color/secondary_text_material_light"
-                android:text="@string/uchiha_q_2"/>
-
-            <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/button"
-                android:layout_below="@id/u_question_2"
-                android:id="@+id/q2_radioGroup"
-                android:layout_toRightOf="@id/image2">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/secondary_text_material_light"
-                    android:id="@+id/q2_itachi"
-                    android:text="@string/uchiha_q2_a"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/secondary_text_material_light"
-                    android:id="@+id/q2_madara"
-                    android:text="@string/uchiha_q2_b"/>
-
-            </RadioGroup>
-
-        </RelativeLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/q3"
-        android:layout_below="@id/q2">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/kakashi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/activity_vertical_margin"
                     android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/kakashi" />
+
+                <TextView
+                    android:id="@+id/u_question_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/kakashi"
+                    android:paddingLeft="@dimen/text_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:text="@string/uchiha_q_1"
+                    android:textColor="@color/secondary_text_material_light"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/q1_radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/u_question_1"
+                    android:layout_toRightOf="@id/kakashi"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/button">
+
+                    <RadioButton
+                        android:id="@+id/q1_true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/uchiha_q1_a"
+                        android:textColor="@color/secondary_text_material_light" />
+
+                    <RadioButton
+                        android:id="@+id/q1_false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/uchiha_q1_b"
+                        android:textColor="@color/secondary_text_material_light" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/q1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/itachi" />
+
+                <TextView
+                    android:id="@+id/u_question_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image2"
+                    android:paddingLeft="@dimen/text_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:text="@string/uchiha_q_2"
+                    android:textColor="@color/secondary_text_material_light"
+                    android:textSize="20dp" />
+
+                <RadioGroup
+                    android:id="@+id/q2_radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/u_question_2"
+                    android:layout_toRightOf="@id/image2"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/button">
+
+                    <RadioButton
+                        android:id="@+id/q2_itachi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/uchiha_q2_a"
+                        android:textColor="@color/secondary_text_material_light" />
+
+                    <RadioButton
+                        android:id="@+id/q2_madara"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/uchiha_q2_b"
+                        android:textColor="@color/secondary_text_material_light" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q2">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
                     android:id="@+id/image3"
-                    android:src="@drawable/tobi"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/tobi" />
 
                 <TextView
                     android:id="@+id/u_question_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@id/image3"
-                    android:paddingTop="@dimen/activity_horizontal_margin"
                     android:paddingLeft="@dimen/text_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:text="@string/uchiha_q_3"
                     android:textColor="@color/secondary_text_material_light"
-                    android:textSize="20dp"
-                    android:text="@string/uchiha_q_3"/>
+                    android:textSize="20dp" />
 
                 <LinearLayout
+                    android:id="@+id/checkbox3_top"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/button"
-                    android:orientation="horizontal"
                     android:layout_below="@id/u_question_3"
                     android:layout_toRightOf="@id/image3"
-                    android:id="@+id/checkbox3_top">
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/button">
 
                     <CheckBox
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/u_question_3"
-                        android:layout_toRightOf="@id/image3"
-                        android:onClick="Question3"
-                        android:textColor="@color/secondary_text_material_light"
                         android:id="@+id/q3_a"
-                        android:text="@string/uchiha_q3_a"/>
-
-                    <CheckBox
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/u_question_3"
                         android:layout_toRightOf="@id/image3"
-                        android:textColor="@color/secondary_text_material_light"
                         android:onClick="Question3"
+                        android:text="@string/uchiha_q3_a"
+                        android:textColor="@color/secondary_text_material_light" />
+
+                    <CheckBox
                         android:id="@+id/q3_b"
-                        android:text="@string/uchiha_q3_b"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/u_question_3"
+                        android:layout_toRightOf="@id/image3"
+                        android:onClick="Question3"
+                        android:text="@string/uchiha_q3_b"
+                        android:textColor="@color/secondary_text_material_light" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingLeft="@dimen/button"
                     android:layout_below="@+id/checkbox3_top"
-                    android:layout_toRightOf="@id/image3">
+                    android:layout_toRightOf="@id/image3"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/button">
 
                     <CheckBox
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/u_question_3"
-                        android:layout_toRightOf="@id/image3"
                         android:id="@+id/q3_c"
-                        android:textColor="@color/secondary_text_material_light"
-                        android:onClick="Question3"
-                        android:text="@string/uchiha_q3_c"/>
-
-                    <CheckBox
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/u_question_3"
                         android:layout_toRightOf="@id/image3"
-                        android:textColor="@color/secondary_text_material_light"
                         android:onClick="Question3"
+                        android:text="@string/uchiha_q3_c"
+                        android:textColor="@color/secondary_text_material_light" />
+
+                    <CheckBox
                         android:id="@+id/q3_d"
-                        android:text="@string/uchiha_q3_d"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/u_question_3"
+                        android:layout_toRightOf="@id/image3"
+                        android:onClick="Question3"
+                        android:text="@string/uchiha_q3_d"
+                        android:textColor="@color/secondary_text_material_light" />
 
                 </LinearLayout>
 
             </RelativeLayout>
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/q3">
-
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q3">
 
-            <ImageView
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/activity_vertical_margin"
-                android:paddingTop="@dimen/activity_horizontal_margin"
-                android:id="@+id/image4"
-                android:src="@drawable/sasukeindra"/>
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/u_question_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/image4"
-                android:paddingTop="@dimen/activity_horizontal_margin"
-                android:textColor="@color/secondary_text_material_light"
-                android:paddingLeft="@dimen/text_margin"
-                android:textSize="20dp"
-                android:text="@string/uchiha_q_4"/>
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/sasukeindra" />
+
+                <TextView
+                    android:id="@+id/u_question_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image4"
+                    android:paddingLeft="@dimen/text_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:text="@string/uchiha_q_4"
+                    android:textColor="@color/secondary_text_material_light"
+                    android:textSize="20dp" />
 
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/button"
-                android:orientation="horizontal"
-                android:layout_below="@id/u_question_4"
-                android:layout_toRightOf="@id/image4"
-                android:id="@+id/radio4_top">
-
-                <CheckBox
+                <LinearLayout
+                    android:id="@+id/radio4_top"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/u_question_4"
                     android:layout_toRightOf="@id/image4"
-                    android:onClick="Question4"
-                    android:textColor="@color/secondary_text_material_light"
-                    android:id="@+id/q4_a"
-                    android:text="@string/uchiha_q4_a"/>
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/button">
 
-                <CheckBox
+                    <CheckBox
+                        android:id="@+id/q4_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/u_question_4"
+                        android:layout_toRightOf="@id/image4"
+                        android:onClick="Question4"
+                        android:text="@string/uchiha_q4_a"
+                        android:textColor="@color/secondary_text_material_light" />
+
+                    <CheckBox
+                        android:id="@+id/q4_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/u_question_4"
+                        android:layout_toRightOf="@id/image4"
+                        android:onClick="Question4"
+                        android:text="@string/uchiha_q4_b"
+                        android:textColor="@color/secondary_text_material_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/u_question_4"
+                    android:layout_below="@+id/radio4_top"
                     android:layout_toRightOf="@id/image4"
-                    android:onClick="Question4"
-                    android:id="@+id/q4_b"
-                    android:textColor="@color/secondary_text_material_light"
-                    android:text="@string/uchiha_q4_b"/>
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/button">
 
-            </LinearLayout>
+                    <CheckBox
+                        android:id="@+id/q4_c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/u_question_4"
+                        android:layout_toRightOf="@id/image4"
+                        android:onClick="Question4"
+                        android:text="@string/uchiha_q4_c"
+                        android:textColor="@color/secondary_text_material_light" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/button"
-                android:layout_below="@+id/radio4_top"
-                android:layout_toRightOf="@id/image4">
+                    <CheckBox
+                        android:id="@+id/q4_d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/u_question_4"
+                        android:layout_toRightOf="@id/image4"
+                        android:onClick="Question4"
+                        android:text="@string/uchiha_q4_d"
+                        android:textColor="@color/secondary_text_material_light" />
 
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/u_question_4"
-                    android:layout_toRightOf="@id/image4"
-                    android:id="@+id/q4_c"
-                    android:textColor="@color/secondary_text_material_light"
-                    android:onClick="Question4"
-                    android:text="@string/uchiha_q4_c"/>
+                </LinearLayout>
 
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/u_question_4"
-                    android:layout_toRightOf="@id/image4"
-                    android:onClick="Question4"
-                    android:id="@+id/q4_d"
-                    android:textColor="@color/secondary_text_material_light"
-                    android:text="@string/uchiha_q4_d"/>
+            </RelativeLayout>
 
-            </LinearLayout>
+        </LinearLayout>
 
-        </RelativeLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:onClick="Submit"
+            android:text="@string/submit_button"
+            android:textColor="@color/uchihaAccent" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/submit_button"
-        android:layout_marginBottom="8dp"
-        android:layout_alignParentBottom="true"
-        android:textColor="@color/uchihaAccent"
-        android:layout_centerHorizontal="true"
-        android:onClick="Submit"/>
-
-</RelativeLayout>
+</ScrollView>
