@@ -90,13 +90,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/q2_butsuma"
-                    android:text="Butsuma"/>
+                    android:text="@string/butsuma" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/q2_itama"
-                    android:text="Itama"/>
+                    android:text="@string/itama" />
 
             </RadioGroup>
 
@@ -212,7 +212,6 @@
                 android:textSize="20dp"
                 android:text="@string/senju_q_4"/>
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -229,9 +228,8 @@
                     android:layout_marginRight="16dp"
                     android:layout_below="@id/u_question_4"
                     android:layout_toRightOf="@id/image4"
-                    android:onClick="Question4"
-                    android:id="@+id/q4_editText"
-                    android:hint="Enter text"/>
+                    android:id="@+id/q4_input"
+                    android:hint="@string/enter_text" />
 
             </LinearLayout>
 
@@ -247,6 +245,5 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:onClick="Submit"/>
-
 
 </RelativeLayout>

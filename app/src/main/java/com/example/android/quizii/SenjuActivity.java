@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -30,6 +31,13 @@ public class SenjuActivity extends AppCompatActivity {
 
     ArrayAdapter<CharSequence> adapter;
 
+    private static final String TAG = "MyActivity ";
+
+    EditText txtDescription;
+
+    String q4_answer;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,8 +56,7 @@ public class SenjuActivity extends AppCompatActivity {
                 String itemSelected = parent.getItemAtPosition(position).toString();
 
                 if (itemSelected.equals("Wood Release")) {
-                    Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position)
-                            + " is selected", Toast.LENGTH_SHORT).show();
+
                     q1 = 1;
 
                 } else {
@@ -132,11 +139,10 @@ public class SenjuActivity extends AppCompatActivity {
             }
         });
 
-    }
-
-    public void Question4(View view) {
+        //TextView q4a_input = (TextView) findViewById(R.id.q4_input);
 
 
+        //String q4_answer = q4a_input.getText().toString();
 
 
 
@@ -144,6 +150,21 @@ public class SenjuActivity extends AppCompatActivity {
 
     public void Submit(View view) {
         Context context = getApplicationContext();
+
+        txtDescription =
+                (EditText) findViewById(R.id.q4_input);
+
+        q4_answer = txtDescription.getText().toString();
+
+        if (q4_answer.equalsIgnoreCase("kakuzu")) {
+
+            q4 = 1;
+
+        } else {
+
+            q4 = 0;
+
+        }
 
         score = q1 + q2 + q3 + q4;
 

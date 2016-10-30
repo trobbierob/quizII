@@ -184,6 +184,7 @@ public class UchihaActivity extends AppCompatActivity {
 
     }
 
+
     public void Submit(View view) {
         Context context = getApplicationContext();
 
