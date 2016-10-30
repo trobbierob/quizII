@@ -21,22 +21,17 @@ public class SenjuActivity extends AppCompatActivity {
     int score = 0;
 
     Spinner spinner;
+    String q4_answer;
+
+    EditText txtDescription;
 
     RadioGroup q2radioGroup;
-    RadioGroup q3radioGroup;
     RadioButton q3_radio_tobirama;
     RadioButton q3_radio_hiruzen;
     RadioButton q3_radio_jiraiya;
     RadioButton q3_radio_nagato;
 
     ArrayAdapter<CharSequence> adapter;
-
-    private static final String TAG = "MyActivity ";
-
-    EditText txtDescription;
-
-    String q4_answer;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +50,7 @@ public class SenjuActivity extends AppCompatActivity {
 
                 String itemSelected = parent.getItemAtPosition(position).toString();
 
-                if (itemSelected.equals("Wood Release")) {
+                if (itemSelected.equals("Wood Release") || itemSelected.equals("木遁")) {
 
                     q1 = 1;
 
@@ -139,24 +134,16 @@ public class SenjuActivity extends AppCompatActivity {
             }
         });
 
-        //TextView q4a_input = (TextView) findViewById(R.id.q4_input);
-
-
-        //String q4_answer = q4a_input.getText().toString();
-
-
-
     }
 
     public void Submit(View view) {
         Context context = getApplicationContext();
 
-        txtDescription =
-                (EditText) findViewById(R.id.q4_input);
+        txtDescription = (EditText) findViewById(R.id.q4_input);
 
         q4_answer = txtDescription.getText().toString();
 
-        if (q4_answer.equalsIgnoreCase("kakuzu")) {
+        if (q4_answer.equalsIgnoreCase("kakuzu") || q4_answer.equalsIgnoreCase("角都")) {
 
             q4 = 1;
 

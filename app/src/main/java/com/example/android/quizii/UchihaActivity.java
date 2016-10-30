@@ -106,7 +106,7 @@ public class UchihaActivity extends AppCompatActivity {
                 } break;
         }
 
-        // ChecK CheckBox when Pain is selected
+        // Check CheckBox when Pain is selected
         switch(view.getId()) {
             case R.id.q3_d:
                 if (checked) {
