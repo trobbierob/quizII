@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Madara VS Hashirama</string>
+    <string name="uchiha_q_1">Kakashi Hatake is a member of the Uchiha Clan</string>
+    <string name="uchiha_q_2">Who is this?</string>
+    <string name="uchiha_q_3">This character is known as:</string>
+    <string name="uchiha_q_4">Whose Sharingan is this?</string>
+    <string name="senju_q_1">What is Hashirama Senju\'s Kekkei Genkai?</string>
+    <string name="senju_q_2">Who is this?</string>
+    <string name="senju_q_3">Who invented the Shadow Clone Technique?</string>
+    <string name="senju_q_4">Who made an assassination attempt on Hashirama Senju?</string>
+    <string name="uchiha_app_name">Uchiha</string>
+    <string name="senju_app_name">Senju</string>
+    <string name="submit_button">Submit</string>
+    <string name="uchiha_q1_a">True</string>
+    <string name="uchiha_q1_b">False</string>
+    <string name="uchiha_q2_a">Itachi</string>
+    <string name="uchiha_q2_b">Madara</string>
+    <string name="uchiha_q3_a">Tobi</string>
+    <string name="uchiha_q3_b">Madara</string>
+    <string name="uchiha_q3_c">Obito</string>
+    <string name="uchiha_q3_d">Pain</string>
+    <string name="uchiha_q4_a">Sasuke</string>
+    <string name="uchiha_q4_b">Fugaku</string>
+    <string name="uchiha_q4_c">Indra</string>
+    <string name="uchiha_q4_d">Kagami</string>
+    <string name="tobirama">Tobirama</string>
+    <string name="hiruzen">Hiruzen</string>
+    <string name="jiraiya">Jiraiya</string>
+    <string name="nagato">Nagato</string>
+    <string name="itama">Itama</string>
+    <string name="butsuma">Butsuma</string>
+    <string name="enter_text">Enter text</string>
+    <string-array name="kekkei_genkai">
+        <item>Ice Release</item>
+        <item>Dark Release</item>
+        <item>Steel Release</item>
+        <item>Wood Release</item>
+        <item>Storm Release</item>
+    </string-array>
+</resources>

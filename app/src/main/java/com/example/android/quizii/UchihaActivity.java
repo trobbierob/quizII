@@ -48,7 +48,6 @@ public class UchihaActivity extends AppCompatActivity {
                 } else {
                     q1 = 1;
                 }
-
             }
 
         });
@@ -65,7 +64,6 @@ public class UchihaActivity extends AppCompatActivity {
                 } else {
                     q2 = 0;
                 }
-
             }
 
         });
@@ -124,7 +122,6 @@ public class UchihaActivity extends AppCompatActivity {
         } else {
             q3 = 0;
         }
-
     }
 
     public void Question4(View view) {
@@ -181,37 +178,23 @@ public class UchihaActivity extends AppCompatActivity {
         } else {
             q4 = 0;
         }
-
     }
 
-
     public void Submit(View view) {
-        Context context = getApplicationContext();
 
+        Context context = getApplicationContext();
         score = q1 + q2 + q3 + q4;
 
         if (score == 4) {
-
             Toast.makeText(context, "100%", Toast.LENGTH_SHORT).show();
-
         } else if (score == 3) {
-
             Toast.makeText(context, "75%", Toast.LENGTH_SHORT).show();
-
         } else if (score == 2) {
-
             Toast.makeText(context, "50%", Toast.LENGTH_SHORT).show();
-
         } else if (score == 1) {
-
             Toast.makeText(context, "25%", Toast.LENGTH_SHORT).show();
-
         } else {
-
             Toast.makeText(context, "0%", Toast.LENGTH_SHORT).show();
-
         }
-
     }
-
 }
