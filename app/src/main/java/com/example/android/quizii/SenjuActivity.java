@@ -14,24 +14,24 @@ import android.widget.Toast;
 
 public class SenjuActivity extends AppCompatActivity {
 
-    int q1 = 0;
-    int q2 = 0;
-    int q3 = 0;
-    int q4 = 0;
-    int score = 0;
+    private int q1 = 0;
+    private int q2 = 0;
+    private int q3 = 0;
+    private int q4 = 0;
+    private int score = 0;
 
-    Spinner spinner;
-    String q4_answer;
+    private Spinner spinner;
+    private String q4_answer;
 
-    EditText txtDescription;
+    private EditText txtDescription;
 
-    RadioGroup q2radioGroup;
-    RadioButton q3_radio_tobirama;
-    RadioButton q3_radio_hiruzen;
-    RadioButton q3_radio_jiraiya;
-    RadioButton q3_radio_nagato;
+    private RadioGroup q2radioGroup;
+    private RadioButton q3_radio_tobirama;
+    private RadioButton q3_radio_hiruzen;
+    private RadioButton q3_radio_jiraiya;
+    private RadioButton q3_radio_nagato;
 
-    ArrayAdapter<CharSequence> adapter;
+    private ArrayAdapter<CharSequence> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

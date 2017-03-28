@@ -15,9 +15,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Find the View that shows the Uchiha text
         ImageView uchiha = (ImageView)findViewById(R.id.madara);
-
-        //TextView uchiha = (TextView)findViewById(R.id.madara);
-
         uchiha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -26,11 +23,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the View that shows the Uchiha text
-        //TextView senju = (TextView)findViewById(R.id.hashirama);
-
+        // Find the View that shows the Senju text
         ImageView senju = (ImageView)findViewById(R.id.hashirama);
-
         senju.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,6 +32,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(senjuIntent);
             }
         });
-
     }
 }

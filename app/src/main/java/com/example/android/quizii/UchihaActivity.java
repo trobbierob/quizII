@@ -12,24 +12,24 @@ import static com.example.android.quizii.R.id.q1_radioGroup;
 
 public class UchihaActivity extends AppCompatActivity {
 
-    int q1 = 0;
-    int q2 = 0;
-    int q3 = 0;
-    int q4 = 0;
-    int score = 0;
+    private int q1 = 0;
+    private int q2 = 0;
+    private int q3 = 0;
+    private int q4 = 0;
+    private int score = 0;
 
-    boolean q3_a = false;
-    boolean q3_b = false;
-    boolean q3_c = false;
-    boolean q3_d = false;
+    private boolean q3_a = false;
+    private boolean q3_b = false;
+    private boolean q3_c = false;
+    private boolean q3_d = false;
 
-    boolean q4_a = false;
-    boolean q4_b = false;
-    boolean q4_c = false;
-    boolean q4_d = false;
+    private boolean q4_a = false;
+    private boolean q4_b = false;
+    private boolean q4_c = false;
+    private boolean q4_d = false;
 
-    RadioGroup q1radioGroup;
-    RadioGroup q2radioGroup;
+    private RadioGroup q1radioGroup;
+    private RadioGroup q2radioGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,6 @@ public class UchihaActivity extends AppCompatActivity {
 
         /* Radio Group for the first Question */
         q1radioGroup = (RadioGroup) findViewById(q1_radioGroup);
-
         /* Attach CheckedChangeListener to radio group */
         q1radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -54,7 +53,6 @@ public class UchihaActivity extends AppCompatActivity {
 
         /* Radio Group for the second Question */
         q2radioGroup = (RadioGroup) findViewById(R.id.q2_radioGroup);
-
         /* Attach CheckedChangeListener to radio group */
         q2radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -67,13 +65,11 @@ public class UchihaActivity extends AppCompatActivity {
             }
 
         });
-
     }
 
     public void Question3(View view) {
 
         boolean checked = ((CheckBox) view).isChecked();
-
         // Check CheckBox when Tobi is selected
         switch(view.getId()) {
             case R.id.q3_a:
@@ -127,7 +123,6 @@ public class UchihaActivity extends AppCompatActivity {
     public void Question4(View view) {
 
         boolean checked = ((CheckBox) view).isChecked();
-
         // Check CheckBox when Sasuke is selected
         switch(view.getId()) {
             case R.id.q4_a:
